@@ -8,7 +8,7 @@ hibernate_connection_password=root
 hibernate_dialect=org_hibernate_dialect_H2Dialect
 hibernate_default_schema=BDRE
 
-function writeDBConf {
+writeDBConf {
 
      echo "hibernate.current_session_context_class=thread" > $(dirname $0)/md-dao/src/main/resources/db.properties
      echo "hibernate.transaction.factory_class=org.hibernate.transaction.JDBCTransactionFactory" >> $(dirname $0)/md-dao/src/main/resources/db.properties
